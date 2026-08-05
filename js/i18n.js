@@ -9,7 +9,7 @@ const i18n = {
 
         hero_greeting: "Hello Everybody, I am",
         hero_title: "Full Stack Developer",
-        hero_desc: "Motivated Full Stack Developer with hands-on experience in modern technologies including Next.js, React, Ionic, Node.js, TypeScript, Angular, and Spring Boot. Specializing in responsive frontends, scalable backends, real-time features (WebSockets), secure authentication (JWT), testing (Jest), and containerization (Docker). Currently pursuing an Engineering Degree in Web Technology / Cloud Computing at ESPRIT University. Strong team player in agile environments, code reviews, and collaborative development. Seeking internship or part-time opportunities.",
+        hero_desc: "Motivated Full Stack Developer with hands-on experience in modern technologies including Next.js, React, Ionic, Node.js, TypeScript, Angular, and Spring Boot. Specializing in responsive frontends, scalable backends, real-time features (WebSockets), secure authentication (JWT), testing (Jest), and containerization (Docker). Currently pursuing an Engineering Degree in Web Technology at ESPRIT University. Strong team player in agile environments, code reviews, and collaborative development. Seeking internship or part-time opportunities.",
         location: "Tunis, Tunisia",
 
         about_title: "About Myself",
@@ -58,7 +58,7 @@ const i18n = {
         exp5_desc: "Developed inventory management solution registering and tracking over 200 products. Built robust backend with Spring Boot improving processing time by 25%, implemented MySQL database management strategies, and conducted systematic API testing with Postman.",
 
         // Education
-        edu1_title: "Engineering Degree in Web Technology (Specialization in Cloud Computing)",
+        edu1_title: "Engineering Degree in Web Technology ",
         edu1_school: "ESPRIT University • Tunis, Tunisia",
         edu1_date: "2024 – Present",
 
@@ -87,7 +87,7 @@ const i18n = {
 
         // Footer
         footer_about_title: "About Me",
-        footer_about_desc: "Jasser Nahali — Full Stack Developer specialized in Next.js, React, Node.js, Fastify, Spring Boot, and Cloud Computing. Building high-performance, real-time web applications.",
+        footer_about_desc: "Jasser Nahali — Full Stack Developer specialized in Next.js, React, Node.js, Fastify, Spring Boot. Building high-performance, real-time web applications.",
         footer_social_title: "Follow Me",
         footer_social_desc: "Let us be social"
     },
@@ -101,7 +101,7 @@ const i18n = {
 
         hero_greeting: "Bonjour tout le monde, je suis",
         hero_title: "Développeur Full Stack",
-        hero_desc: "Développeur Full Stack motivé avec une expérience pratique des technologies modernes incluant Next.js, React, Ionic, Node.js, TypeScript, Angular et Spring Boot. Spécialisé dans les frontends réactifs, les backends évolutifs, les fonctionnalités en temps réel (WebSockets), l'authentification sécurisée (JWT), les tests (Jest) et la conteneurisation (Docker). Actuellement en cycle d'ingénieur en Technologies Web / Cloud Computing à l'Université ESPRIT. Doté d'un excellent esprit d'équipe dans les environnements agiles, les revues de code et le développement collaboratif. À la recherche d'opportunités de stage ou à temps partiel.",
+        hero_desc: "Développeur Full Stack motivé avec une expérience pratique des technologies modernes incluant Next.js, React, Ionic, Node.js, TypeScript, Angular et Spring Boot. Spécialisé dans les frontends réactifs, les backends évolutifs, les fonctionnalités en temps réel (WebSockets), l'authentification sécurisée (JWT), les tests (Jest) et la conteneurisation (Docker). Actuellement en cycle d'ingénieur en Technologies Web  à l'Université ESPRIT. Doté d'un excellent esprit d'équipe dans les environnements agiles, les revues de code et le développement collaboratif. À la recherche d'opportunités de stage ou à temps partiel.",
         location: "Tunis, Tunisie",
 
         about_title: "À Propos de Moi",
@@ -150,7 +150,7 @@ const i18n = {
         exp5_desc: "Développement d'une solution de gestion des stocks pour plus de 200 produits. Création d'un backend robuste avec Spring Boot réduisant le temps de traitement de 25%, mise en œuvre de stratégies de gestion de base de données MySQL et réalisation de tests d'API complets avec Postman.",
 
         // Education
-        edu1_title: "Diplôme d'Ingénieur en Technologies Web (Spécialisation Cloud Computing)",
+        edu1_title: "Diplôme d'Ingénieur en Technologies Web ",
         edu1_school: "Université ESPRIT • Tunis, Tunisie",
         edu1_date: "2024 – Présent",
 
@@ -179,7 +179,7 @@ const i18n = {
 
         // Footer
         footer_about_title: "À Propos de Moi",
-        footer_about_desc: "Jasser Nahali — Développeur Full Stack spécialisé en Next.js, React, Node.js, Fastify, Spring Boot et Cloud Computing. Créateur d'applications web réactives, sécurisées et performantes.",
+        footer_about_desc: "Jasser Nahali — Développeur Full Stack spécialisé en Next.js, React, Node.js, Fastify, Spring Boot . Créateur d'applications web réactives, sécurisées et performantes.",
         footer_social_title: "Suivez-moi",
         footer_social_desc: "Restons connectés"
     }
