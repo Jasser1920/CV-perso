@@ -424,8 +424,15 @@
 		display: none;
 	}
 	.tabs_inner .tab-content .tab-pane .list li .media .d-flex {
+		width: 100% !important;
+		text-align: left !important;
+		justify-content: flex-start !important;
 		padding-right: 0px;
-		padding-bottom: 18px;
+		padding-bottom: 8px;
+	}
+	.tabs_inner .tab-content .tab-pane .list li .media .media-body {
+		width: 100% !important;
+		padding-left: 0px !important;
 	}
 	.tabs_inner .tab-content .tab-pane .list li .media {
 		display: block;
@@ -434,7 +441,7 @@
 		display: none;
 	}
 	.tabs_inner .nav.nav-tabs {
-		margin-bottom: 0px;
+		margin-bottom: 30px;
 	}
 	.isotope_fillter .gallery_filter li {
 		margin-right: 17px;
