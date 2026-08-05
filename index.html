@@ -1,402 +1,481 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link rel="icon" href="img/favicon.png" type="image/png">
-        <title>Jasser Nahali - Full Stack Developer</title>
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="css/bootstrap.css">
-        <link rel="stylesheet" href="vendors/linericon/style.css">
-        <link rel="stylesheet" href="css/font-awesome.min.css">
-        <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
-        <link rel="stylesheet" href="vendors/lightbox/simpleLightbox.css">
-        <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
-        <link rel="stylesheet" href="vendors/animate-css/animate.css">
-        <link rel="stylesheet" href="vendors/popup/magnific-popup.css">
-        <link rel="stylesheet" href="vendors/flaticon/flaticon.css">
-        <!-- main css -->
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/responsive.css">
-    </head>
-    <body>
-        
-        <!--================Header Menu Area =================-->
-        <header class="header_area">
-            <div class="main_menu">
-            	<nav class="navbar navbar-expand-lg navbar-light">
-					<div class="container box_1620">
-						<!-- Brand and toggle get grouped for better mobile display -->
-						<a class="navbar-brand logo_h" href="index.html"><h1 style="color: white;">MEET ME</h1></a>
-						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-						</button>
-						<!-- Collect the nav links, forms, and other content for toggling -->
-						<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
-							<ul class="nav navbar-nav menu_nav ml-auto">
-								<li class="nav-item active"><a class="nav-link" href="index.html" data-i18n="nav_home">Home</a></li> 
-								<li class="nav-item"><a class="nav-link" href="#aboutme" data-i18n="nav_about">About Me</a></li> 
-								<li class="nav-item"><a class="nav-link" href="#expedu" data-i18n="nav_expedu">Experiences/Education</a></li> 
-								<li class="nav-item"><a class="nav-link" href="#language" data-i18n="nav_language">Language</a></li> 
-								<li class="nav-item"><a class="nav-link" href="#footer" data-i18n="nav_contact">Contact</a></li>
-								<li class="nav-item dropdown cv-dropdown-item align-self-center ml-lg-2">
-									<a class="nav-link dropdown-toggle cv-btn" href="#" id="cvDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-										<i class="fa fa-download"></i> <span data-i18n="nav_download_cv">Download CV</span>
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="icon" href="img/favicon.png" type="image/png">
+	<title>Jasser Nahali - Full Stack Developer</title>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="vendors/linericon/style.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
+	<link rel="stylesheet" href="vendors/lightbox/simpleLightbox.css">
+	<link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
+	<link rel="stylesheet" href="vendors/animate-css/animate.css">
+	<link rel="stylesheet" href="vendors/popup/magnific-popup.css">
+	<link rel="stylesheet" href="vendors/flaticon/flaticon.css">
+	<!-- main css -->
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+	<!--================Header Menu Area =================-->
+	<header class="header_area">
+		<div class="main_menu">
+			<nav class="navbar navbar-expand-lg navbar-light">
+				<div class="container box_1620">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<a class="navbar-brand logo_h" href="index.html">
+						<h1 style="color: white;">MEET ME</h1>
+					</a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse"
+						data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+						aria-expanded="false" aria-label="Toggle navigation">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+						<ul class="nav navbar-nav menu_nav ml-auto">
+							<li class="nav-item active"><a class="nav-link" href="index.html"
+									data-i18n="nav_home">Home</a></li>
+							<li class="nav-item"><a class="nav-link" href="#aboutme" data-i18n="nav_about">About Me</a>
+							</li>
+							<li class="nav-item"><a class="nav-link" href="#expedu"
+									data-i18n="nav_expedu">Experiences/Education</a></li>
+							<li class="nav-item"><a class="nav-link" href="#language"
+									data-i18n="nav_language">Language</a></li>
+							<li class="nav-item"><a class="nav-link" href="#footer" data-i18n="nav_contact">Contact</a>
+							</li>
+							<li class="nav-item dropdown cv-dropdown-item align-self-center ml-lg-2">
+								<a class="nav-link dropdown-toggle cv-btn" href="#" id="cvDropdown" role="button"
+									data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									<i class="fa fa-download"></i> <span data-i18n="nav_download_cv">Download CV</span>
+								</a>
+								<div class="dropdown-menu dropdown-menu-right cv-dropdown-menu"
+									aria-labelledby="cvDropdown">
+									<a class="dropdown-item" href="JasserNahali_en.pdf"
+										download="Jasser_Nahali_CV_EN.pdf" target="_blank">
+										<i class="fa fa-file-pdf-o"></i> English Edition (EN)
 									</a>
-									<div class="dropdown-menu dropdown-menu-right cv-dropdown-menu" aria-labelledby="cvDropdown">
-										<a class="dropdown-item" href="JasserNahali_en.pdf" download="Jasser_Nahali_CV_EN.pdf" target="_blank">
-											<i class="fa fa-file-pdf-o"></i> English Edition (EN)
-										</a>
-										<a class="dropdown-item" href="JasserNahali_FR.pdf" download="Jasser_Nahali_CV_FR.pdf" target="_blank">
-											<i class="fa fa-file-pdf-o"></i> Édition Française (FR)
-										</a>
-									</div>
-								</li>
-								<li class="nav-item lang-toggle-item align-self-center ml-lg-3">
-									<div class="lang-switch-btn-group" role="group" aria-label="Language Switcher">
-										<button type="button" class="lang-btn active" id="btn-en" onclick="setLanguage('en')">EN</button>
-										<span class="lang-divider">|</span>
-										<button type="button" class="lang-btn" id="btn-fr" onclick="setLanguage('fr')">FR</button>
-									</div>
-								</li>
-							</ul>
-						</div> 
+									<a class="dropdown-item" href="JasserNahali_FR.pdf"
+										download="Jasser_Nahali_CV_FR.pdf" target="_blank">
+										<i class="fa fa-file-pdf-o"></i> Édition Française (FR)
+									</a>
+								</div>
+							</li>
+							<li class="nav-item lang-toggle-item align-self-center ml-lg-3">
+								<div class="lang-switch-btn-group" role="group" aria-label="Language Switcher">
+									<button type="button" class="lang-btn active" id="btn-en"
+										onclick="setLanguage('en')">EN</button>
+									<span class="lang-divider">|</span>
+									<button type="button" class="lang-btn" id="btn-fr"
+										onclick="setLanguage('fr')">FR</button>
+								</div>
+							</li>
+						</ul>
 					</div>
-            	</nav>
-            </div>
-        </header>
-        <!--================Header Menu Area =================-->
-        
-        <!--================Home Banner Area =================-->
-        <section class="home_banner_area">
-           	<div class="container box_1620">
-           		<div class="banner_inner d-flex align-items-center">
-					<div class="banner_content">
-						<div class="media">
-							<div class="d-flex">
-								<img class="imageprofile" src="img/jasser.png" alt="Jasser Nahali Profile">
+				</div>
+			</nav>
+		</div>
+	</header>
+	<!--================Header Menu Area =================-->
+
+	<!--================Home Banner Area =================-->
+	<section class="home_banner_area">
+		<div class="container box_1620">
+			<div class="banner_inner d-flex align-items-center">
+				<div class="banner_content">
+					<div class="media">
+						<div class="d-flex">
+							<img class="imageprofile" src="img/jasser.png" alt="Jasser Nahali Profile">
+						</div>
+						<div class="media-body">
+							<div class="personal_text">
+								<h6 data-i18n="hero_greeting">Hello Everybody, I am</h6>
+								<h3>JASSER NAHALI</h3>
+								<h4 data-i18n="hero_title">Full Stack Developer</h4>
+								<p data-i18n="hero_desc">Motivated Full Stack Developer with hands-on experience in
+									modern technologies including Next.js, React, Ionic, Node.js, TypeScript, Angular,
+									and Spring Boot. Specializing in responsive frontends, scalable backends, real-time
+									features (WebSockets), secure authentication (JWT), testing (Jest), and
+									containerization (Docker). Currently pursuing an Engineering Degree in Web
+									Technology / Cloud Computing at ESPRIT University. Strong team player in agile
+									environments, code reviews, and collaborative development. Seeking internship or
+									part-time opportunities.</p>
+								<ul class="list basic_info">
+									<li><a href="tel:+21629523985"><i class="lnr lnr-phone-handset"></i> +216
+											29523985</a></li>
+									<li><a href="mailto:nahalijasser1@gmail.com"><i class="lnr lnr-envelope"></i>
+											nahalijasser1@gmail.com</a></li>
+									<li><a href="https://jasser-nahali.netlify.app" target="_blank"><i
+												class="lnr lnr-map-marker"></i> <span data-i18n="location">Tunis,
+												Tunisia</span></a></li>
+									<li><a href="https://github.com/Jasser1920" target="_blank"><i
+												class="fa fa-github"></i> github.com/Jasser1920</a></li>
+								</ul>
+
 							</div>
-							<div class="media-body">
-								<div class="personal_text">
-									<h6 data-i18n="hero_greeting">Hello Everybody, I am</h6>
-									<h3>JASSER NAHALI</h3>
-									<h4 data-i18n="hero_title">Full Stack Developer</h4>
-									<p data-i18n="hero_desc">Motivated Full Stack Developer with hands-on experience in modern technologies including Next.js, React, Ionic, Node.js, TypeScript, Angular, and Spring Boot. Specializing in responsive frontends, scalable backends, real-time features (WebSockets), secure authentication (JWT), testing (Jest), and containerization (Docker). Currently pursuing an Engineering Degree in Web Technology / Cloud Computing at ESPRIT University. Strong team player in agile environments, code reviews, and collaborative development. Seeking internship or part-time opportunities.</p>
-									<ul class="list basic_info">
-										<li><a href="tel:+21629523985"><i class="lnr lnr-phone-handset"></i> +216 29523985</a></li>
-										<li><a href="mailto:nahalijasser1@gmail.com"><i class="lnr lnr-envelope"></i> nahalijasser1@gmail.com</a></li>
-										<li><a href="https://jasser-nahali.netlify.app" target="_blank"><i class="lnr lnr-map-marker"></i> <span data-i18n="location">Tunis, Tunisia</span></a></li>
-										<li><a href="https://github.com/Jasser1920" target="_blank"><i class="fa fa-github"></i> github.com/Jasser1920</a></li>
-									</ul>
-									
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--================End Home Banner Area =================-->
+
+	<!--================Welcome Area =================-->
+	<section id="aboutme" class="welcome_area p_120">
+		<div class="container">
+			<div class="row welcome_inner">
+				<div class="col-lg-6">
+					<div class="welcome_text">
+						<h4 data-i18n="about_title">About Myself</h4>
+						<p data-i18n="about_desc">With hands-on experience across key projects like Code-Dual (real-time
+							competitive coding platform), Nutriwell-Store (E-commerce & Health web app), KiddySafe
+							(Next.js/Ionic monorepo template), and Field Intervention Management, I have built
+							production-ready full-stack applications using Next.js, React, Node.js, Fastify, Spring
+							Boot, Docker, and PostgreSQL.</p>
+						<div class="row">
+							<div class="col-md-4">
+								<div class="wel_item">
+									<i class="lnr lnr-code"></i>
+									<h4 data-i18n="card1_title">Modern Stacks</h4>
+									<p data-i18n="card1_desc">Next.js, React, Ionic, Angular, Fastify, Spring Boot,
+										NestJS</p>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="wel_item">
+									<i class="lnr lnr-database"></i>
+									<h4 data-i18n="card2_title">Data & Security</h4>
+									<p data-i18n="card2_desc">PostgreSQL, Prisma, MySQL, WebSockets, JWT Auth</p>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="wel_item">
+									<i class="lnr lnr-apartment"></i>
+									<h4 data-i18n="card3_title">DevOps & Quality</h4>
+									<p data-i18n="card3_desc">Docker, CI/CD, GitHub Actions, Jest, SonarQube</p>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-            </div>
-        </section>
-        <!--================End Home Banner Area =================-->
-        
-        <!--================Welcome Area =================-->
-		<section id="aboutme" class="welcome_area p_120">
-        	<div class="container">
-        		<div class="row welcome_inner">
-        			<div class="col-lg-6">
-        				<div class="welcome_text">
-        					<h4 data-i18n="about_title">About Myself</h4>
-		 					<p data-i18n="about_desc">With hands-on experience across key projects like Code-Dual (real-time competitive coding platform), Nutriwell-Store (E-commerce & Health web app), KiddySafe (Next.js/Ionic monorepo template), and Field Intervention Management, I have built production-ready full-stack applications using Next.js, React, Node.js, Fastify, Spring Boot, Docker, and PostgreSQL.</p>
-		 					<div class="row">
-		 						<div class="col-md-4">
-		 							<div class="wel_item">
-		 								<i class="lnr lnr-code"></i>
-		 								<h4 data-i18n="card1_title">Modern Stacks</h4>
-		 								<p data-i18n="card1_desc">Next.js, React, Ionic, Angular, Fastify, Spring Boot, NestJS</p>
-		 							</div>
-		 						</div>
-		 						<div class="col-md-4">
-		 							<div class="wel_item">
-		 								<i class="lnr lnr-database"></i>
-		 								<h4 data-i18n="card2_title">Data & Security</h4>
-		 								<p data-i18n="card2_desc">PostgreSQL, Prisma, MySQL, WebSockets, JWT Auth</p>
-		 							</div>
-		 						</div>
-		 						<div class="col-md-4">
-		 							<div class="wel_item">
-		 								<i class="lnr lnr-apartment"></i>
-		 								<h4 data-i18n="card3_title">DevOps & Quality</h4>
-		 								<p data-i18n="card3_desc">Docker, CI/CD, GitHub Actions, Jest, SonarQube</p>
-		 							</div>
-		 						</div>
-		 					</div>
-        				</div>
-        			</div>
-        			<div class="col-lg-6">
-        				<div class="tools_expert">
-        					<div class="skill_main">
-								<div class="skill_item">
-									<h4><span data-i18n="skill1">JavaScript / TypeScript / Node.js</span> <span class="counter">92</span>%</h4>
-									<div class="progress_br">
-										<div class="progress">
-											<div class="progress-bar" role="progressbar" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100"></div>
-										</div>
-									</div>
-								</div>
-								<div class="skill_item">
-									<h4><span data-i18n="skill2">React / Next.js / Ionic</span> <span class="counter">90</span>%</h4>
-									<div class="progress_br">
-										<div class="progress">
-											<div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-										</div>
-									</div>
-								</div>
-								<div class="skill_item">
-									<h4><span data-i18n="skill3">Fastify / Express / NestJS</span> <span class="counter">88</span>%</h4>
-									<div class="progress_br">
-										<div class="progress">
-											<div class="progress-bar" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100"></div>
-										</div>
-									</div>
-								</div>
-								<div class="skill_item">
-									<h4><span data-i18n="skill4">Spring Boot / Java / Angular</span> <span class="counter">82</span>%</h4>
-									<div class="progress_br">
-										<div class="progress">
-											<div class="progress-bar" role="progressbar" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100"></div>
-										</div>
-									</div>
-								</div>
-								<div class="skill_item">
-									<h4><span data-i18n="skill5">PostgreSQL / Prisma / MySQL / Docker</span> <span class="counter">85</span>%</h4>
-									<div class="progress_br">
-										<div class="progress">
-											<div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-										</div>
+				<div class="col-lg-6">
+					<div class="tools_expert">
+						<div class="skill_main">
+							<div class="skill_item">
+								<h4><span data-i18n="skill1">JavaScript / TypeScript / Node.js</span> <span
+										class="counter">92</span>%</h4>
+								<div class="progress_br">
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" aria-valuenow="92"
+											aria-valuemin="0" aria-valuemax="100"></div>
 									</div>
 								</div>
 							</div>
-        				</div>
-        			</div>
-        		</div>
-        	</div>
-        </section>
-        <!--================End Welcome Area =================-->
-        
-        <!--================My Tabs Area =================-->
-        <section id="expedu" class="mytabs_area p_120">
-        	<div class="container">
-        		<div class="tabs_inner">
-					<ul class="nav nav-tabs" id="myTab" role="tablist">
-						<li class="nav-item">
-							<a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true" data-i18n="tab_exp">My Experiences</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false" data-i18n="tab_edu">My Education</a>
-						</li>
-					</ul>
-					<div class="tab-content" id="myTabContent">
-						<div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-							<ul class="list">
-								<li>
-									<span></span>
-									<div class="media">
-										<div class="d-flex">
-											<p data-i18n="exp1_date">15/06/2026 – 21/08/2026</p>
-										</div>
-										<div class="media-body">
-											<h4 data-i18n="exp1_title">Code-Dual (Real-Time Coding Platform)</h4>
-											<p data-i18n="exp1_company">Full Stack Developer Intern • Medianet (Tunis, Tunisia)</p>
-											<p data-i18n="exp1_desc">Designed low-latency duel synchronization using Socket.io & WebSockets for React & Fastify stack. Integrated Judge0 containerized sandbox execution for multi-language submissions (JS, Python, C++, Java, Rust, Go). Built event-driven elimination tournament engine, ELO rating system, dynamic ranks, and JWT authentication with secure HTTP-only cookies & Prisma/PostgreSQL.</p>
-										</div>
+							<div class="skill_item">
+								<h4><span data-i18n="skill2">React / Next.js / Ionic</span> <span
+										class="counter">90</span>%</h4>
+								<div class="progress_br">
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" aria-valuenow="90"
+											aria-valuemin="0" aria-valuemax="100"></div>
 									</div>
-								</li>
-								<li>
-									<span></span>
-									<div class="media">
-										<div class="d-flex">
-											<p data-i18n="exp2_date">Present</p>
-										</div>
-										<div class="media-body">
-											<h4 data-i18n="exp2_title">Nutriwell-Store (E-Commerce & Health)</h4>
-											<p data-i18n="exp2_company">Full Stack Developer • Personal Project (Remote)</p>
-											<p data-i18n="exp2_desc">Designed end-to-end online payment system with real-time total calculations and transactional multi-table DB operations. Created multi-attribute product catalog, interactive Leaflet/OpenStreetMap store locator map, NestJS administration editorial suite, session-based admin auth with Bcrypt/Docker, and SSH GitHub Actions VPS deployment pipeline.</p>
-										</div>
+								</div>
+							</div>
+							<div class="skill_item">
+								<h4><span data-i18n="skill3">Fastify / Express / NestJS</span> <span
+										class="counter">88</span>%</h4>
+								<div class="progress_br">
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" aria-valuenow="88"
+											aria-valuemin="0" aria-valuemax="100"></div>
 									</div>
-								</li>
-								<li>
-									<span></span>
-									<div class="media">
-										<div class="d-flex">
-											<p data-i18n="exp3_date">07/2025 – 08/2025</p>
-										</div>
-										<div class="media-body">
-											<h4 data-i18n="exp3_title">KiddySafe Monorepo Boilerplate</h4>
-											<p data-i18n="exp3_company">Developer • Remote (Switzerland)</p>
-											<p data-i18n="exp3_desc">Developed complete production-ready monorepo starter template for location-aware family safety apps using Next.js, Ionic React, Tailwind CSS, Capacitor, Leaflet/OSM, Node.js, Express, TypeScript, Prisma (PostgreSQL), JWT, WebSockets, Jest, React Testing Library, and Docker.</p>
-										</div>
+								</div>
+							</div>
+							<div class="skill_item">
+								<h4><span data-i18n="skill4">Spring Boot / Java / Angular</span> <span
+										class="counter">82</span>%</h4>
+								<div class="progress_br">
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" aria-valuenow="82"
+											aria-valuemin="0" aria-valuemax="100"></div>
 									</div>
-								</li>
-								<li>
-									<span></span>
-									<div class="media">
-										<div class="d-flex">
-											<p data-i18n="exp4_date">01/2022 – 07/2022</p>
-										</div>
-										<div class="media-body">
-											<h4 data-i18n="exp4_title">Field Intervention Management Project</h4>
-											<p data-i18n="exp4_company">Developer • Iprecision (Tunis, Tunisia)</p>
-											<p data-i18n="exp4_desc">Developed comprehensive client-service provider intervention tracking system for over 100 interventions. Engineered responsive frontend using Angular (30% engagement boost), scalable backend with Spring Boot (20% response time reduction), MySQL database, and SonarQube quality assurance.</p>
-										</div>
+								</div>
+							</div>
+							<div class="skill_item">
+								<h4><span data-i18n="skill5">PostgreSQL / Prisma / MySQL / Docker</span> <span
+										class="counter">85</span>%</h4>
+								<div class="progress_br">
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" aria-valuenow="85"
+											aria-valuemin="0" aria-valuemax="100"></div>
 									</div>
-								</li>
-								<li>
-									<span></span>
-									<div class="media">
-										<div class="d-flex">
-											<p data-i18n="exp5_date">01/2021 – 02/2021</p>
-										</div>
-										<div class="media-body">
-											<h4 data-i18n="exp5_title">Shop Management System Project</h4>
-											<p data-i18n="exp5_company">Developer • Siamo Startup (Tunis, Tunisia)</p>
-											<p data-i18n="exp5_desc">Developed inventory management solution registering and tracking over 200 products. Built robust backend with Spring Boot improving processing time by 25%, implemented MySQL database management strategies, and conducted systematic API testing with Postman.</p>
-										</div>
-									</div>
-								</li>
-							</ul>
-						</div>
-						<div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-							<ul class="list">
-								<li>
-									<span></span>
-									<div class="media">
-										<div class="d-flex">
-											<p data-i18n="edu1_date">2024 – Present</p>
-										</div>
-										<div class="media-body">
-											<h4 data-i18n="edu1_title">Engineering Degree in Web Technology (Specialization in Cloud Computing)</h4>
-											<p data-i18n="edu1_school">ESPRIT University • Tunis, Tunisia</p>
-										</div>
-									</div>
-								</li>
-								<li>
-									<span></span>
-									<div class="media">
-										<div class="d-flex">
-											<p data-i18n="edu2_date">2020 – 2023</p>
-										</div>
-										<div class="media-body">
-											<h4 data-i18n="edu2_title">License in Technology in Computer Science</h4>
-											<p data-i18n="edu2_school">ISET Mahdia • Mahdia, Tunisia</p>
-										</div>
-									</div>
-								</li>
-								<li>
-									<span></span>
-									<div class="media">
-										<div class="d-flex">
-											<p data-i18n="edu3_date">2018 – 2019</p>
-										</div>
-										<div class="media-body">
-											<h4 data-i18n="edu3_title">Bachelor of Computer Science</h4>
-											<p data-i18n="edu3_school">Lycée Ibn Arafa • Tunisia</p>
-										</div>
-									</div>
-								</li>
-							</ul>
+								</div>
+							</div>
 						</div>
 					</div>
-        		</div>
-        	</div>
-        </section>
-        <!--================End My Tabs Area =================-->
-        
-        <!--================Testimonials Area =================-->
-        <section id="language" class="testimonials_area p_120">
-            <div class="container">
-                <div class="main_title">
-                    <h2 data-i18n="lang_sec_title">Language Skills</h2>
-                    <p data-i18n="lang_sec_desc">As a web developer, effective communication across languages enables seamless collaboration with global teams, clearer code reviews, and better understanding of diverse user needs in the digital world.</p>
-                </div>
-                <div class="testi_inner">
-                    <div class="testi_slider owl-carousel">
-                        <div class="item">
-                            <div class="testi_item">
-                                <p data-i18n="lang1_desc">Fluent in all aspects of web development discussions, from client requirements to complex backend architecture.</p>
-                                <h4 data-i18n="lang1_title">Arabic</h4>
-                                <div class="level" data-i18n="lang1_level">Native</div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="testi_item">
-                                <p data-i18n="lang2_desc">Can express ideas with fluency and spontaneity in web dev contexts. Reads demanding technical docs, APIs, and frameworks; communicates fluently for agile sprints, code documentation, and international collaboration.</p>
-                                <h4 data-i18n="lang2_title">English</h4>
-                                <div class="level" data-i18n="lang2_level">Proficient / Advanced</div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="testi_item">
-                                <p data-i18n="lang3_desc">Interacts fluently in team meetings on technical topics and discusses responsive design innovations and software architecture.</p>
-                                <h4 data-i18n="lang3_title">French</h4>
-                                <div class="level" data-i18n="lang3_level">Intermediate</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--================End Testimonials Area =================-->
-        
-        <!--================Footer Area =================-->
-        <footer id="footer" class="footer_area p_120">
-        	<div class="container">
-        		<div class="row footer_inner">
-        			<div class="col-lg-5 col-sm-6">
-        				<aside class="f_widget ab_widget">
-        					<div class="f_title">
-        						<h3 data-i18n="footer_about_title">About Me</h3>
-        					</div>
-         					<p data-i18n="footer_about_desc">Jasser Nahali — Full Stack Developer specialized in Next.js, React, Node.js, Fastify, Spring Boot, and Cloud Computing. Building high-performance, real-time web applications.</p>
-        				</aside>
-        			</div>
-        			
-        			<div class="col-lg-2">
-        				<aside class="f_widget social_widget">
-        					<div class="f_title">
-        						<h3 data-i18n="footer_social_title">Follow Me</h3>
-        					</div>
-        					<p data-i18n="footer_social_desc">Let us be social</p>
-        					<ul class="list">
-        						<li><a href="https://www.facebook.com/jasser.nahali" target="_blank"><i class="fa fa-facebook"></i></a></li>
-        						<li><a href="https://www.linkedin.com/in/jasser-nahali-78a94a263/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-        						<li><a href="https://github.com/Jasser1920" target="_blank"><i class="fa fa-github"></i></a></li>
-        					</ul>
-        				</aside>
-        			</div>
-        		</div>
-        	</div>
-        </footer>
-        <!--================End Footer Area =================-->
-        
-        <!-- Optional JavaScript -->
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="js/jquery-3.3.1.min.js"></script>
-        <script src="js/popper.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/stellar.js"></script>
-        <script src="vendors/lightbox/simpleLightbox.min.js"></script>
-        <script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
-        <script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
-        <script src="vendors/isotope/isotope.pkgd.min.js"></script>
-        <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
-        <script src="vendors/popup/jquery.magnific-popup.min.js"></script>
-        <script src="js/jquery.ajaxchimp.min.js"></script>
-        <script src="vendors/counter-up/jquery.waypoints.min.js"></script>
-        <script src="vendors/counter-up/jquery.counterup.min.js"></script>
-        <script src="js/mail-script.js"></script>
-        <script src="js/i18n.js"></script>
-        <script src="js/theme.js"></script>
-    </body>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--================End Welcome Area =================-->
+
+	<!--================My Tabs Area =================-->
+	<section id="expedu" class="mytabs_area p_120">
+		<div class="container">
+			<div class="tabs_inner">
+				<ul class="nav nav-tabs" id="myTab" role="tablist">
+					<li class="nav-item">
+						<a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab"
+							aria-controls="home" aria-selected="true" data-i18n="tab_exp">My Experiences</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
+							aria-controls="profile" aria-selected="false" data-i18n="tab_edu">My Education</a>
+					</li>
+				</ul>
+				<div class="tab-content" id="myTabContent">
+					<div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+						<ul class="list">
+							<li>
+								<span></span>
+								<div class="media">
+									<div class="d-flex">
+										<p data-i18n="exp1_date">15/06/2026 – 21/08/2026</p>
+									</div>
+									<div class="media-body">
+										<h4 data-i18n="exp1_title">Code-Dual (Real-Time Coding Platform)</h4>
+										<p data-i18n="exp1_company">Full Stack Developer Intern • Medianet (Tunis,
+											Tunisia)</p>
+										<p data-i18n="exp1_desc">Designed low-latency duel synchronization using
+											Socket.io & WebSockets for React & Fastify stack. Integrated Judge0
+											containerized sandbox execution for multi-language submissions (JS, Python,
+											C++, Java, Rust, Go). Built event-driven elimination tournament engine, ELO
+											rating system, dynamic ranks, and JWT authentication with secure HTTP-only
+											cookies & Prisma/PostgreSQL.</p>
+									</div>
+								</div>
+							</li>
+							<li>
+								<span></span>
+								<div class="media">
+									<div class="d-flex">
+										<p data-i18n="exp2_date">Present</p>
+									</div>
+									<div class="media-body">
+										<h4 data-i18n="exp2_title">Nutriwell-Store (E-Commerce & Health)</h4>
+										<p data-i18n="exp2_company">Full Stack Developer • Personal Project (Remote)</p>
+										<p data-i18n="exp2_desc">Designed end-to-end online payment system with
+											real-time total calculations and transactional multi-table DB operations.
+											Created multi-attribute product catalog, interactive Leaflet/OpenStreetMap
+											store locator map, NestJS administration editorial suite, session-based
+											admin auth with Bcrypt/Docker, and SSH GitHub Actions VPS deployment
+											pipeline.</p>
+									</div>
+								</div>
+							</li>
+							<li>
+								<span></span>
+								<div class="media">
+									<div class="d-flex">
+										<p data-i18n="exp3_date">07/2025 – 08/2025</p>
+									</div>
+									<div class="media-body">
+										<h4 data-i18n="exp3_title">KiddySafe Monorepo Boilerplate</h4>
+										<p data-i18n="exp3_company">Developer • Remote (Switzerland)</p>
+										<p data-i18n="exp3_desc">Developed complete production-ready monorepo starter
+											template for location-aware family safety apps using Next.js, Ionic React,
+											Tailwind CSS, Capacitor, Leaflet/OSM, Node.js, Express, TypeScript, Prisma
+											(PostgreSQL), JWT, WebSockets, Jest, React Testing Library, and Docker.</p>
+									</div>
+								</div>
+							</li>
+							<li>
+								<span></span>
+								<div class="media">
+									<div class="d-flex">
+										<p data-i18n="exp4_date">01/2022 – 07/2022</p>
+									</div>
+									<div class="media-body">
+										<h4 data-i18n="exp4_title">Field Intervention Management Project</h4>
+										<p data-i18n="exp4_company">Developer • Iprecision (Tunis, Tunisia)</p>
+										<p data-i18n="exp4_desc">Developed comprehensive client-service provider
+											intervention tracking system for over 100 interventions. Engineered
+											responsive frontend using Angular (30% engagement boost), scalable backend
+											with Spring Boot (20% response time reduction), MySQL database, and
+											SonarQube quality assurance.</p>
+									</div>
+								</div>
+							</li>
+							<li>
+								<span></span>
+								<div class="media">
+									<div class="d-flex">
+										<p data-i18n="exp5_date">01/2021 – 02/2021</p>
+									</div>
+									<div class="media-body">
+										<h4 data-i18n="exp5_title">Shop Management System Project</h4>
+										<p data-i18n="exp5_company">Developer • Siamo Startup (Tunis, Tunisia)</p>
+										<p data-i18n="exp5_desc">Developed inventory management solution registering and
+											tracking over 200 products. Built robust backend with Spring Boot improving
+											processing time by 25%, implemented MySQL database management strategies,
+											and conducted systematic API testing with Postman.</p>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+						<ul class="list">
+							<li>
+								<span></span>
+								<div class="media">
+									<div class="d-flex">
+										<p data-i18n="edu1_date">2024 – Present</p>
+									</div>
+									<div class="media-body">
+										<h4 data-i18n="edu1_title">Engineering Degree in Web Technology </h4>
+										<p data-i18n="edu1_school">ESPRIT University • Tunis, Tunisia</p>
+									</div>
+								</div>
+							</li>
+							<li>
+								<span></span>
+								<div class="media">
+									<div class="d-flex">
+										<p data-i18n="edu2_date">2020 – 2023</p>
+									</div>
+									<div class="media-body">
+										<h4 data-i18n="edu2_title">License in Technology in Computer Science</h4>
+										<p data-i18n="edu2_school">ISET Mahdia • Mahdia, Tunisia</p>
+									</div>
+								</div>
+							</li>
+							<li>
+								<span></span>
+								<div class="media">
+									<div class="d-flex">
+										<p data-i18n="edu3_date">2018 – 2019</p>
+									</div>
+									<div class="media-body">
+										<h4 data-i18n="edu3_title">Bachelor of Computer Science</h4>
+										<p data-i18n="edu3_school">Lycée Ibn Arafa • Tunisia</p>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--================End My Tabs Area =================-->
+
+	<!--================Testimonials Area =================-->
+	<section id="language" class="testimonials_area p_120">
+		<div class="container">
+			<div class="main_title">
+				<h2 data-i18n="lang_sec_title">Language Skills</h2>
+				<p data-i18n="lang_sec_desc">As a web developer, effective communication across languages enables
+					seamless collaboration with global teams, clearer code reviews, and better understanding of diverse
+					user needs in the digital world.</p>
+			</div>
+			<div class="testi_inner">
+				<div class="testi_slider owl-carousel">
+					<div class="item">
+						<div class="testi_item">
+							<p data-i18n="lang1_desc">Fluent in all aspects of web development discussions, from client
+								requirements to complex backend architecture.</p>
+							<h4 data-i18n="lang1_title">Arabic</h4>
+							<div class="level" data-i18n="lang1_level">Native</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="testi_item">
+							<p data-i18n="lang2_desc">Can express ideas with fluency and spontaneity in web dev
+								contexts. Reads demanding technical docs, APIs, and frameworks; communicates fluently
+								for agile sprints, code documentation, and international collaboration.</p>
+							<h4 data-i18n="lang2_title">English</h4>
+							<div class="level" data-i18n="lang2_level">Proficient / Advanced</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="testi_item">
+							<p data-i18n="lang3_desc">Interacts fluently in team meetings on technical topics and
+								discusses responsive design innovations and software architecture.</p>
+							<h4 data-i18n="lang3_title">French</h4>
+							<div class="level" data-i18n="lang3_level">Intermediate</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--================End Testimonials Area =================-->
+
+	<!--================Footer Area =================-->
+	<footer id="footer" class="footer_area p_120">
+		<div class="container">
+			<div class="row footer_inner">
+				<div class="col-lg-5 col-sm-6">
+					<aside class="f_widget ab_widget">
+						<div class="f_title">
+							<h3 data-i18n="footer_about_title">About Me</h3>
+						</div>
+						<p data-i18n="footer_about_desc">Jasser Nahali — Full Stack Developer specialized in Next.js,
+							React, Node.js, Fastify, Spring Boot, and Cloud Computing. Building high-performance,
+							real-time web applications.</p>
+					</aside>
+				</div>
+
+				<div class="col-lg-2">
+					<aside class="f_widget social_widget">
+						<div class="f_title">
+							<h3 data-i18n="footer_social_title">Follow Me</h3>
+						</div>
+						<p data-i18n="footer_social_desc">Let us be social</p>
+						<ul class="list">
+							<li><a href="https://www.facebook.com/jasser.nahali" target="_blank"><i
+										class="fa fa-facebook"></i></a></li>
+							<li><a href="https://www.linkedin.com/in/jasser-nahali-78a94a263/" target="_blank"><i
+										class="fa fa-linkedin"></i></a></li>
+							<li><a href="https://github.com/Jasser1920" target="_blank"><i class="fa fa-github"></i></a>
+							</li>
+						</ul>
+					</aside>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!--================End Footer Area =================-->
+
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/popper.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/stellar.js"></script>
+	<script src="vendors/lightbox/simpleLightbox.min.js"></script>
+	<script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
+	<script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
+	<script src="vendors/isotope/isotope.pkgd.min.js"></script>
+	<script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+	<script src="vendors/popup/jquery.magnific-popup.min.js"></script>
+	<script src="js/jquery.ajaxchimp.min.js"></script>
+	<script src="vendors/counter-up/jquery.waypoints.min.js"></script>
+	<script src="vendors/counter-up/jquery.counterup.min.js"></script>
+	<script src="js/mail-script.js"></script>
+	<script src="js/i18n.js"></script>
+	<script src="js/theme.js"></script>
+</body>
+
 </html>
