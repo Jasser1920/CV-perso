@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="robots" content="noindex">
+	<title>Admin — Jasser Nahali</title>
+	<link rel="icon" href="../img/favicon.png" type="image/png">
+</head>
+
+<body>
+	<script src="https://unpkg.com/decap-cms@3.16.3/dist/decap-cms.js"></script>
+	<script>
+		// Live preview: shows the real homepage, re-rendered with the unsaved edits.
+		(function () {
+			var siteUrl = new URL('../index.html', window.location.href).href;
+			var origin = window.location.origin;
+
+			var SitePreview = createClass({
+				send: function () {
+					var frame = this.frame;
+					if (!frame || !frame.contentWindow) return;
+					var data = this.props.entry.get('data').toJS();
+					// Turn uploaded media paths into URLs the preview can load
+					var getAsset = this.props.getAsset;
+					if (data.profile && data.profile.photo) {
+						var asset = getAsset(data.profile.photo);
+						if (asset && asset.toString()) data.profile.photo = asset.toString();
+					}
+					frame.contentWindow.postMessage({ type: 'site-preview', data: data }, origin);
+				},
+				componentDidMount: function () { this.send(); },
+				componentDidUpdate: function () { this.send(); },
+				render: function () {
+					var self = this;
+					return h('iframe', {
+						src: siteUrl + '#preview',
+						title: 'Website preview',
+						ref: function (n) { self.frame = n; },
+						onLoad: function () { self.send(); },
+						style: { width: '100%', height: '100vh', border: 0, display: 'block' }
+					});
+				}
+			});
+
+			CMS.registerPreviewTemplate('site', SitePreview);
+		})();
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,648 @@
+# Admin panel configuration (Decap CMS).
+# Every field here maps to content/site.json, which the homepage renders.
+# Saving in /admin commits to the main branch; the host then redeploys automatically.
+
+backend:
+  name: github
+  repo: Jasser1920/CV-perso
+  branch: main
+  commit_messages:
+    update: Update website content from admin
+local_backend: true
+publish_mode: simple
+media_folder: img/uploads
+public_folder: img/uploads
+site_url: https://jasser-nahali.netlify.app
+display_url: https://jasser-nahali.netlify.app
+collections:
+- name: website
+  label: Website
+  editor:
+    preview: true
+  files:
+  - name: site
+    label: Edit the whole website
+    file: content/site.json
+    format: json
+    fields:
+    - name: meta
+      label: SEO (browser tab & Google)
+      widget: object
+      collapsed: true
+      fields:
+      - name: title
+        label: Page title
+        widget: string
+      - name: description
+        label: Search description
+        widget: text
+    - name: profile
+      label: Profile & contact details
+      widget: object
+      collapsed: true
+      fields:
+      - name: first_name
+        label: First name
+        widget: string
+      - name: last_name
+        label: Last name
+        widget: string
+      - name: photo
+        label: Portrait photo
+        widget: image
+        hint: Use a portrait (vertical) photo, at least 1200px wide, JPG under 500 KB.
+      - name: email
+        label: Email
+        widget: string
+      - name: phone
+        label: Phone
+        widget: string
+      - name: location
+        label: Location
+        widget: object
+        collapsed: false
+        summary: '{{fields.en}}'
+        fields:
+        - name: en
+          label: English
+          widget: string
+        - name: fr
+          label: Français
+          widget: string
+      - name: cv_en
+        label: CV (English PDF)
+        widget: file
+      - name: cv_fr
+        label: CV (French PDF)
+        widget: file
+    - name: nav
+      label: Menu labels
+      widget: object
+      collapsed: true
+      fields:
+      - name: about
+        label: About link
+        widget: object
+        collapsed: false
+        summary: '{{fields.en}}'
+        fields:
+        - name: en
+          label: English
+          widget: string
+        - name: fr
+          label: Français
+          widget: string
+      - name: experience
+        label: Experience link
+        widget: object
+        collapsed: false
+        summary: '{{fields.en}}'
+        fields:
+        - name: en
+          label: English
+          widget: string
+        - name: fr
+          label: Français
+          widget: string
+      - name: languages
+        label: Languages link
+        widget: object
+        collapsed: false
+        summary: '{{fields.en}}'
+        fields:
+        - name: en
+          label: English
+          widget: string
+        - name: fr
+          label: Français
+          widget: string
+      - name: contact
+        label: Contact link
+        widget: object
+        collapsed: false
+        summary: '{{fields.en}}'
+        fields:
+        - name: en
+          label: English
+          widget: string
+        - name: fr
+          label: Français
+          widget: string
+      - name: download
+        label: Download CV label
+        widget: object
+        collapsed: false
+        summary: '{{fields.en}}'
+        fields:
+        - name: en
+          label: English
+          widget: string
+        - name: fr
+          label: Français
+          widget: string
+      - name: menu
+        label: Mobile menu button
+        widget: object
+        collapsed: false
+        summary: '{{fields.en}}'
+        fields:
+        - name: en
+          label: English
+          widget: string
+        - name: fr
+          label: Français
+          widget: string
+    - name: hero
+      label: Hero (top of page)
+      widget: object
+      collapsed: true
+      fields:
+      - name: visible
+        label: Show this section
+        widget: boolean
+        default: true
+      - name: eyebrow
+        label: Small line above name
+        widget: object
+        collapsed: false
+        summary: '{{fields.en}}'
+        fields:
+        - name: en
+          label: English
+          widget: string
+        - name: fr
+          label: Français
+          widget: string
+      - name: title
+        label: Job title
+        widget: object
+        collapsed: false
+        summary: '{{fields.en}}'
+        fields:
+        - name: en
+          label: English
+          widget: string
+        - name: fr
+          label: Français
+          widget: string
+      - name: description
+        label: Introduction
+        widget: object
+        collapsed: false
+        summary: '{{fields.en}}'
+        fields:
+        - name: en
+          label: English
+          widget: text
+        - name: fr
+          label: Français
+          widget: text
+      - name: cta_work
+        label: First link
+        widget: object
+        collapsed: false
+        summary: '{{fields.en}}'
+        fields:
+        - name: en
+          label: English
+          widget: string
+        - name: fr
+          label: Français
+          widget: string
+      - name: cta_contact
+        label: Second link
+        widget: object
+        collapsed: false
+        summary: '{{fields.en}}'
+        fields:
+        - name: en
+          label: English
+          widget: string
+        - name: fr
+          label: Français
+          widget: string
+    - name: about
+      label: About
+      widget: object
+      collapsed: true
+      fields:
+      - name: visible
+        label: Show this section
+        widget: boolean
+        default: true
+      - name: eyebrow
+        label: Small label
+        widget: object
+        collapsed: false
+        summary: '{{fields.en}}'
+        fields:
+        - name: en
+          label: English
+          widget: string
+        - name: fr
+          label: Français
+          widget: string
+      - name: title
+        label: Heading
+        widget: object
+        collapsed: false
+        summary: '{{fields.en}}'
+        fields:
+        - name: en
+          label: English
+          widget: string
+        - name: fr
+          label: Français
+          widget: string
+      - name: body
+        label: Text
+        widget: object
+        collapsed: false
+        summary: '{{fields.en}}'
+        fields:
+        - name: en
+          label: English
+          widget: text
+        - name: fr
+          label: Français
+          widget: text
+      - name: pillars
+        label: Skill areas
+        label_singular: Skill area
+        widget: list
+        collapsed: true
+        summary: '{{fields.title.en}}'
+        fields:
+        - name: title
+          label: Title
+          widget: object
+          collapsed: false
+          summary: '{{fields.en}}'
+          fields:
+          - name: en
+            label: English
+            widget: string
+          - name: fr
+            label: Français
+            widget: string
+        - name: description
+          label: Description
+          widget: object
+          collapsed: false
+          summary: '{{fields.en}}'
+          fields:
+          - name: en
+            label: English
+            widget: text
+          - name: fr
+            label: Français
+            widget: text
+    - name: experience
+      label: Experience & Education
+      widget: object
+      collapsed: true
+      fields:
+      - name: visible
+        label: Show this section
+        widget: boolean
+        default: true
+      - name: eyebrow
+        label: Small label
+        widget: object
+        collapsed: false
+        summary: '{{fields.en}}'
+        fields:
+        - name: en
+          label: English
+          widget: string
+        - name: fr
+          label: Français
+          widget: string
+      - name: title
+        label: Heading
+        widget: object
+        collapsed: false
+        summary: '{{fields.en}}'
+        fields:
+        - name: en
+          label: English
+          widget: string
+        - name: fr
+          label: Français
+          widget: string
+      - name: tab_jobs
+        label: Experience tab label
+        widget: object
+        collapsed: false
+        summary: '{{fields.en}}'
+        fields:
+        - name: en
+          label: English
+          widget: string
+        - name: fr
+          label: Français
+          widget: string
+      - name: tab_education
+        label: Education tab label
+        widget: object
+        collapsed: false
+        summary: '{{fields.en}}'
+        fields:
+        - name: en
+          label: English
+          widget: string
+        - name: fr
+          label: Français
+          widget: string
+      - name: jobs
+        label: Experience
+        label_singular: Experience
+        widget: list
+        collapsed: true
+        summary: '{{fields.title.en}}  ·  {{fields.date.en}}'
+        fields:
+        - name: date
+          label: Dates
+          widget: object
+          collapsed: false
+          summary: '{{fields.en}}'
+          fields:
+          - name: en
+            label: English
+            widget: string
+          - name: fr
+            label: Français
+            widget: string
+        - name: title
+          label: Project / role title
+          widget: object
+          collapsed: false
+          summary: '{{fields.en}}'
+          fields:
+          - name: en
+            label: English
+            widget: string
+          - name: fr
+            label: Français
+            widget: string
+        - name: company
+          label: Role & company
+          widget: object
+          collapsed: false
+          summary: '{{fields.en}}'
+          fields:
+          - name: en
+            label: English
+            widget: string
+          - name: fr
+            label: Français
+            widget: string
+        - name: description
+          label: Description
+          widget: object
+          collapsed: false
+          summary: '{{fields.en}}'
+          fields:
+          - name: en
+            label: English
+            widget: text
+          - name: fr
+            label: Français
+            widget: text
+      - name: education
+        label: Education
+        label_singular: Degree
+        widget: list
+        collapsed: true
+        summary: '{{fields.title.en}}  ·  {{fields.date.en}}'
+        fields:
+        - name: date
+          label: Dates
+          widget: object
+          collapsed: false
+          summary: '{{fields.en}}'
+          fields:
+          - name: en
+            label: English
+            widget: string
+          - name: fr
+            label: Français
+            widget: string
+        - name: title
+          label: Degree
+          widget: object
+          collapsed: false
+          summary: '{{fields.en}}'
+          fields:
+          - name: en
+            label: English
+            widget: string
+          - name: fr
+            label: Français
+            widget: string
+        - name: school
+          label: School & city
+          widget: object
+          collapsed: false
+          summary: '{{fields.en}}'
+          fields:
+          - name: en
+            label: English
+            widget: string
+          - name: fr
+            label: Français
+            widget: string
+    - name: stack
+      label: Technical expertise
+      widget: object
+      collapsed: true
+      fields:
+      - name: visible
+        label: Show this section
+        widget: boolean
+        default: true
+      - name: eyebrow
+        label: Small label
+        widget: object
+        collapsed: false
+        summary: '{{fields.en}}'
+        fields:
+        - name: en
+          label: English
+          widget: string
+        - name: fr
+          label: Français
+          widget: string
+      - name: title
+        label: Heading
+        widget: object
+        collapsed: false
+        summary: '{{fields.en}}'
+        fields:
+        - name: en
+          label: English
+          widget: string
+        - name: fr
+          label: Français
+          widget: string
+      - name: items
+        label: Rows
+        label_singular: Row
+        widget: list
+        collapsed: true
+        summary: '{{fields.value}}'
+        fields:
+        - name: label
+          label: Category
+          widget: object
+          collapsed: false
+          summary: '{{fields.en}}'
+          fields:
+          - name: en
+            label: English
+            widget: string
+          - name: fr
+            label: Français
+            widget: string
+        - name: value
+          label: Technologies
+          widget: string
+    - name: languages
+      label: Languages
+      widget: object
+      collapsed: true
+      fields:
+      - name: visible
+        label: Show this section
+        widget: boolean
+        default: true
+      - name: eyebrow
+        label: Small label
+        widget: object
+        collapsed: false
+        summary: '{{fields.en}}'
+        fields:
+        - name: en
+          label: English
+          widget: string
+        - name: fr
+          label: Français
+          widget: string
+      - name: title
+        label: Heading
+        widget: object
+        collapsed: false
+        summary: '{{fields.en}}'
+        fields:
+        - name: en
+          label: English
+          widget: string
+        - name: fr
+          label: Français
+          widget: string
+      - name: items
+        label: Languages
+        label_singular: Language
+        widget: list
+        collapsed: true
+        summary: '{{fields.name.en}}'
+        fields:
+        - name: name
+          label: Language
+          widget: object
+          collapsed: false
+          summary: '{{fields.en}}'
+          fields:
+          - name: en
+            label: English
+            widget: string
+          - name: fr
+            label: Français
+            widget: string
+        - name: level
+          label: Level
+          widget: object
+          collapsed: false
+          summary: '{{fields.en}}'
+          fields:
+          - name: en
+            label: English
+            widget: string
+          - name: fr
+            label: Français
+            widget: string
+        - name: description
+          label: Description
+          widget: object
+          collapsed: false
+          summary: '{{fields.en}}'
+          fields:
+          - name: en
+            label: English
+            widget: text
+          - name: fr
+            label: Français
+            widget: text
+    - name: contact
+      label: Contact
+      widget: object
+      collapsed: true
+      fields:
+      - name: visible
+        label: Show this section
+        widget: boolean
+        default: true
+      - name: eyebrow
+        label: Small label
+        widget: object
+        collapsed: false
+        summary: '{{fields.en}}'
+        fields:
+        - name: en
+          label: English
+          widget: string
+        - name: fr
+          label: Français
+          widget: string
+      - name: title
+        label: Heading
+        widget: object
+        collapsed: false
+        summary: '{{fields.en}}'
+        fields:
+        - name: en
+          label: English
+          widget: string
+        - name: fr
+          label: Français
+          widget: string
+      - name: socials
+        label: Social links
+        label_singular: Social link
+        widget: list
+        collapsed: true
+        summary: '{{fields.label}}'
+        fields:
+        - name: label
+          label: Name
+          widget: string
+        - name: url
+          label: URL
+          widget: string
+    - name: footer
+      label: Footer
+      widget: object
+      collapsed: true
+      fields:
+      - name: back_to_top
+        label: Back to top link
+        widget: object
+        collapsed: false
+        summary: '{{fields.en}}'
+        fields:
+        - name: en
+          label: English
+          widget: string
+        - name: fr
+          label: Français
+          widget: string
