@@ -1,20 +1,28 @@
 {
-  "meta": {
-    "title": "Jasser Nahali — Software Engineer",
-    "description": "Jasser Nahali, software engineer specialized in full-stack architecture, microservices and real-time backend systems. Based in Tunis."
-  },
-  "profile": {
-    "first_name": "Jasser",
-    "last_name": "Nahali",
-    "photo": "img/jasser.jpg",
-    "email": "nahalijasser1@gmail.com",
-    "phone": "+216 29 523 985",
-    "location": {
-      "en": "Tunis, Tunisia",
-      "fr": "Tunis, Tunisie"
+  "contact": {
+    "visible": true,
+    "eyebrow": {
+      "en": "Contact",
+      "fr": "Contact"
     },
-    "cv_en": "JasserNahali_en.pdf",
-    "cv_fr": "JasserNahali_FR.pdf"
+    "title": {
+      "en": "Let’s build something",
+      "fr": "Construisons quelque chose"
+    },
+    "socials": [
+      {
+        "label": "LinkedIn",
+        "url": "https://www.linkedin.com/in/jasser-nahali-78a94a263/"
+      },
+      {
+        "label": "GitHub",
+        "url": "https://github.com/Jasser1920"
+      },
+      {
+        "label": "Facebook",
+        "url": "https://www.facebook.com/jasser.nahali"
+      }
+    ]
   },
   "nav": {
     "menu": {
@@ -42,75 +50,70 @@
       "fr": "Télécharger"
     }
   },
-  "hero": {
-    "visible": true,
-    "eyebrow": {
-      "en": "Portfolio — 2026",
-      "fr": "Portfolio — 2026"
-    },
-    "title": {
-      "en": "Software Engineer | Full Stack & Systems",
-      "fr": "Ingénieur Logiciel | Full Stack & Systèmes"
-    },
-    "description": {
-      "en": "Software Engineer and Computer Engineering student at ESPRIT University specializing in scalable full-stack architecture, microservices, and real-time backend engines. Proven track record of architecting low-latency synchronization protocols, containerized code execution sandboxes, and cloud-ready systems using TypeScript, Node.js, NestJS, Fastify, Spring Boot, and Docker.",
-      "fr": "Ingénieur Logiciel et étudiant en génie informatique à l'Université ESPRIT, spécialisé dans l'architecture full-stack évolutive, les microservices et les moteurs backend en temps réel. Expérience avérée dans la conception de protocoles de synchronisation à faible latence, de sandboxes d'exécution de code conteneurisées et de systèmes cloud utilisant TypeScript, Node.js, NestJS, Fastify, Spring Boot et Docker."
-    },
-    "cta_work": {
-      "en": "Discover my work",
-      "fr": "Découvrir mon travail"
-    },
-    "cta_contact": {
-      "en": "Get in touch",
-      "fr": "Me contacter"
-    }
+  "meta": {
+    "title": "Jasser Nahali — Software Engineer",
+    "description": "Jasser Nahali, software engineer specialized in full-stack architecture, microservices and real-time backend systems. Based in Tunis."
   },
-  "about": {
+  "stack": {
     "visible": true,
     "eyebrow": {
-      "en": "The Profile",
-      "fr": "Le Profil"
+      "en": "Tools of the trade",
+      "fr": "Les outils du métier"
     },
     "title": {
-      "en": "About Myself",
-      "fr": "À Propos de Moi"
+      "en": "Technical Expertise",
+      "fr": "Compétences Techniques"
     },
-    "body": {
-      "en": "Software Engineer and Computer Engineering student specializing in building high-performance, production-ready full-stack systems. With hands-on expertise spanning Code-Dual (real-time competitive coding engine with containerized sandboxes), Nutriwell-Store (full-stack e-commerce & health platform), KiddySafe Monorepo (location-aware monorepo template), and enterprise microservices, I design scalable backend architectures, real-time synchronization protocols, and robust frontend applications.",
-      "fr": "Ingénieur Logiciel et étudiant en génie informatique spécialisé dans le développement de systèmes full-stack performants et prêts pour la production. Fort d'une expérience concrète sur des projets majeurs tels que Code-Dual (moteur de codage compétitif en temps réel avec sandboxes conteneurisées), Nutriwell-Store (plateforme e-commerce & santé), KiddySafe Monorepo (template monorepo géolocalisé) et des microservices d'entreprise, je conçois des architectures backend évolutives, des protocoles de synchronisation en temps réel et des applications frontend robustes."
-    },
-    "pillars": [
+    "items": [
       {
-        "title": {
-          "en": "Software & Architecture",
-          "fr": "Génie Logiciel & Architecture"
+        "label": {
+          "en": "Languages & Runtime",
+          "fr": "Langages & Runtime"
         },
-        "description": {
-          "en": "Microservices, RESTful APIs, Real-Time (WebSockets), Event-Driven Architecture, OOP, CI/CD",
-          "fr": "Microservices, API RESTful, Temps réel (WebSockets), Architecture événementielle, POO, CI/CD"
-        }
+        "value": "TypeScript / JavaScript / Node.js / NestJS / Fastify"
       },
       {
-        "title": {
-          "en": "Backend & Cloud",
-          "fr": "Backend & Infrastructure Cloud"
+        "label": {
+          "en": "Interface",
+          "fr": "Interface"
         },
-        "description": {
-          "en": "Node.js, NestJS, Fastify, Express.js, Spring Boot, Docker, Redis, VPS Deployment",
-          "fr": "Node.js, NestJS, Fastify, Express.js, Spring Boot, Docker, Redis, Déploiement VPS"
-        }
+        "value": "React / Next.js / Angular / Ionic React / Tailwind CSS"
       },
       {
-        "title": {
-          "en": "Frontend & Databases",
-          "fr": "Frontend & Bases de Données"
+        "label": {
+          "en": "Enterprise",
+          "fr": "Entreprise"
         },
-        "description": {
-          "en": "React, Next.js, Angular, Ionic React, Tailwind CSS, PostgreSQL, MySQL, Prisma ORM",
-          "fr": "React, Next.js, Angular, Ionic React, Tailwind CSS, PostgreSQL, MySQL, Prisma ORM"
-        }
+        "value": "Spring Boot / Java / C++ / Python"
+      },
+      {
+        "label": {
+          "en": "Data",
+          "fr": "Données"
+        },
+        "value": "PostgreSQL / MySQL / Prisma ORM / Redis"
+      },
+      {
+        "label": {
+          "en": "Delivery",
+          "fr": "Livraison"
+        },
+        "value": "Docker / Docker Compose / CI/CD / GitHub Actions / Jest"
       }
     ]
+  },
+  "profile": {
+    "first_name": "Jasser",
+    "last_name": "Nahali",
+    "photo": "img/jasser.jpg",
+    "email": "nahalijasser1@gmail.com",
+    "phone": "+216 29 523 985",
+    "location": {
+      "en": "Tunis, Tunisia",
+      "fr": "Tunis, Tunisie"
+    },
+    "cv_en": "img/uploads/jassernahali_en.pdf",
+    "cv_fr": "img/uploads/jassernahali_fr.pdf"
   },
   "experience": {
     "visible": true,
@@ -267,53 +270,75 @@
       }
     ]
   },
-  "stack": {
+  "about": {
     "visible": true,
     "eyebrow": {
-      "en": "Tools of the trade",
-      "fr": "Les outils du métier"
+      "en": "The Profile",
+      "fr": "Le Profil"
     },
     "title": {
-      "en": "Technical Expertise",
-      "fr": "Compétences Techniques"
+      "en": "About Myself",
+      "fr": "À Propos de Moi"
     },
-    "items": [
+    "body": {
+      "en": "Software Engineer and Computer Engineering student specializing in building high-performance, production-ready full-stack systems. With hands-on expertise spanning Code-Dual (real-time competitive coding engine with containerized sandboxes), Nutriwell-Store (full-stack e-commerce & health platform), KiddySafe Monorepo (location-aware monorepo template), and enterprise microservices, I design scalable backend architectures, real-time synchronization protocols, and robust frontend applications.",
+      "fr": "Ingénieur Logiciel et étudiant en génie informatique spécialisé dans le développement de systèmes full-stack performants et prêts pour la production. Fort d'une expérience concrète sur des projets majeurs tels que Code-Dual (moteur de codage compétitif en temps réel avec sandboxes conteneurisées), Nutriwell-Store (plateforme e-commerce & santé), KiddySafe Monorepo (template monorepo géolocalisé) et des microservices d'entreprise, je conçois des architectures backend évolutives, des protocoles de synchronisation en temps réel et des applications frontend robustes."
+    },
+    "pillars": [
       {
-        "label": {
-          "en": "Languages & Runtime",
-          "fr": "Langages & Runtime"
+        "title": {
+          "en": "Software & Architecture",
+          "fr": "Génie Logiciel & Architecture"
         },
-        "value": "TypeScript / JavaScript / Node.js / NestJS / Fastify"
+        "description": {
+          "en": "Microservices, RESTful APIs, Real-Time (WebSockets), Event-Driven Architecture, OOP, CI/CD",
+          "fr": "Microservices, API RESTful, Temps réel (WebSockets), Architecture événementielle, POO, CI/CD"
+        }
       },
       {
-        "label": {
-          "en": "Interface",
-          "fr": "Interface"
+        "title": {
+          "en": "Backend & Cloud",
+          "fr": "Backend & Infrastructure Cloud"
         },
-        "value": "React / Next.js / Angular / Ionic React / Tailwind CSS"
+        "description": {
+          "en": "Node.js, NestJS, Fastify, Express.js, Spring Boot, Docker, Redis, VPS Deployment",
+          "fr": "Node.js, NestJS, Fastify, Express.js, Spring Boot, Docker, Redis, Déploiement VPS"
+        }
       },
       {
-        "label": {
-          "en": "Enterprise",
-          "fr": "Entreprise"
+        "title": {
+          "en": "Frontend & Databases",
+          "fr": "Frontend & Bases de Données"
         },
-        "value": "Spring Boot / Java / C++ / Python"
-      },
-      {
-        "label": {
-          "en": "Data",
-          "fr": "Données"
-        },
-        "value": "PostgreSQL / MySQL / Prisma ORM / Redis"
-      },
-      {
-        "label": {
-          "en": "Delivery",
-          "fr": "Livraison"
-        },
-        "value": "Docker / Docker Compose / CI/CD / GitHub Actions / Jest"
+        "description": {
+          "en": "React, Next.js, Angular, Ionic React, Tailwind CSS, PostgreSQL, MySQL, Prisma ORM",
+          "fr": "React, Next.js, Angular, Ionic React, Tailwind CSS, PostgreSQL, MySQL, Prisma ORM"
+        }
       }
     ]
+  },
+  "hero": {
+    "visible": true,
+    "eyebrow": {
+      "en": "Portfolio — 2026",
+      "fr": "Portfolio — 2026"
+    },
+    "title": {
+      "en": "Software Engineer | Full Stack & Systems",
+      "fr": "Ingénieur Logiciel | Full Stack & Systèmes"
+    },
+    "description": {
+      "en": "Software Engineer and Computer Engineering student at ESPRIT University specializing in scalable full-stack architecture, microservices, and real-time backend engines. Proven track record of architecting low-latency synchronization protocols, containerized code execution sandboxes, and cloud-ready systems using TypeScript, Node.js, NestJS, Fastify, Spring Boot, and Docker.",
+      "fr": "Ingénieur Logiciel et étudiant en génie informatique à l'Université ESPRIT, spécialisé dans l'architecture full-stack évolutive, les microservices et les moteurs backend en temps réel. Expérience avérée dans la conception de protocoles de synchronisation à faible latence, de sandboxes d'exécution de code conteneurisées et de systèmes cloud utilisant TypeScript, Node.js, NestJS, Fastify, Spring Boot et Docker."
+    },
+    "cta_work": {
+      "en": "Discover my work",
+      "fr": "Découvrir mon travail"
+    },
+    "cta_contact": {
+      "en": "Get in touch",
+      "fr": "Me contacter"
+    }
   },
   "languages": {
     "visible": true,
@@ -367,31 +392,6 @@
           "en": "Professional working ability for technical team meetings, code reviews, and software architecture exchanges.",
           "fr": "Capacité professionnelle de travail pour les réunions d'équipe technique, les revues de code et les échanges d'architecture logicielle."
         }
-      }
-    ]
-  },
-  "contact": {
-    "visible": true,
-    "eyebrow": {
-      "en": "Contact",
-      "fr": "Contact"
-    },
-    "title": {
-      "en": "Let’s build something",
-      "fr": "Construisons quelque chose"
-    },
-    "socials": [
-      {
-        "label": "LinkedIn",
-        "url": "https://www.linkedin.com/in/jasser-nahali-78a94a263/"
-      },
-      {
-        "label": "GitHub",
-        "url": "https://github.com/Jasser1920"
-      },
-      {
-        "label": "Facebook",
-        "url": "https://www.facebook.com/jasser.nahali"
       }
     ]
   },
